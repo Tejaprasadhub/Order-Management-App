@@ -1,0 +1,30 @@
+<!-- <div style="position: relative;"> -->
+    <div class="app-container" [@slideInOut]>
+        <div class="content-box">
+          <div class="row align-items-center">
+            <div class="col-md-12 mx-auto">
+                <!-- <div class="platform-name">
+                  Platform Name
+                </div> -->
+                <div class="page-header p-2">
+                  Verify OTP
+                </div>
+                <div class="page-subheader p-2">
+Please enter the otp sent to +91 8639744892              </div>
+                <form (ngSubmit)="login()" [formGroup]="verifyOTPForm" novalidate>
+                  <div class="col-md-12 ">
+                  <p-inputOtp class="p-2" [length]="6" [integerOnly]="true" />
+                <div class="p-2">
+                  <p-button label="Verify OTP"  styleClass="w-100" [rounded]="true" (click)="verifyOtp()" severity="info" />
+                </div>   
+                <div class="p-2 text-center mt-4">
+                    <span class="text"><strong class="text-highlight"  >Resend OTP</strong></span>
+                  </div>    
+              </div>
+                </form>
+            </div>
+          </div>     
+        </div>
+    </div>
+<!-- </div> -->
+

@@ -1,0 +1,43 @@
+<div class="app-container">
+      <div class="content-box">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <img class="img-fluid" src="assets/images/logo_purple_512.png"/> -->
+          </div>
+          <div class="col-md-6 mx-auto">
+              <!-- <div class="platform-name">
+                Platform Name
+              </div> -->
+              <div class="page-header p-2">
+                Log In to your account
+              </div>
+              <div class="page-subheader p-2">
+                Log in to manage orders, track dues, and connect with your retailers effortlessly.
+              </div>
+              <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+                <div class="col-md-12">
+                  <p-inputGroup class="p-2">
+                    <p-inputGroupAddon>
+                        <i class="pi pi-phone"></i>
+                    </p-inputGroupAddon>
+                    <input pInputText placeholder="Phone Number" />
+                </p-inputGroup>
+                <p-inputGroup class="p-2">
+                  <p-inputGroupAddon>
+                      <i class="pi pi-lock"></i>
+                  </p-inputGroupAddon>
+                  <p-password placeholder="Password" class="w-100" [toggleMask]="true" />
+              </p-inputGroup>      
+              <div class="p-2">
+                <p-button label="Log in" styleClass="w-100" [rounded]="true" severity="info" />
+              </div>        
+              <div class="p-2 text-center mt-4">
+                <span class="text">Trouble logging in? <strong class="text-highlight" (click)="resetPassword()">Reset Password</strong></span>
+              </div>     
+            </div>
+              </form>
+          </div>
+        </div>     
+      </div>
+  </div>
+  
