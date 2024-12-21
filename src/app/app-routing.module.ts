@@ -7,8 +7,9 @@ const routes: Routes = [
   Shell.childRoutes([
     { path: 'reset-password', loadChildren: () => import('./auth/reset-password/reset-password.module').then(m => m.ResetPasswordModule) },
     { path: 'verify-otp', loadChildren: () => import('./auth/verify-otp/verify-otp.module').then(m => m.VerifyOtpModule) },
-    { path: 'change-password', loadChildren: () => import('./auth/change-password/change-password.module').then(m => m.ChangePasswordModule) }
+    { path: 'change-password', loadChildren: () => import('./auth/change-password/change-password.module').then(m => m.ChangePasswordModule) },
   ]),
+  { path: 'create-account', loadChildren: () => import('./auth/create-account/create-account.module').then(m => m.CreateAccountModule) },
   { path: '', redirectTo: 'login', pathMatch: 'full'  },
   { path: 'login', component: LoginComponent },
 ];

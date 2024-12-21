@@ -8,6 +8,7 @@
   --app-page-subheader-color: #6B7280;
   --app-text-color: #6B7280;
   --app-text-highlight-color: #374151;
+  --app-input-border-color:#BAE6FD;
 }
 
 .app-container {
@@ -26,7 +27,7 @@
     width: 100%;
     min-height: 100%;
 
-    .p-button {
+    .p-button:not(.p-button-outlined) {
       background-color: var(--app-button-bg-color);
       border: 1px solid var(--app-button-border-color);
 
@@ -82,11 +83,13 @@
     .p-inputgroup-addon {
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
+      border:1px solid var(--app-input-border-color);
     }
 
     .p-inputtext {
       border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
+      border-bottom-right-radius: 15px;      
+      border:1px solid var(--app-input-border-color);
     }
     .p-inputotp .p-inputtext{
       border-radius:0

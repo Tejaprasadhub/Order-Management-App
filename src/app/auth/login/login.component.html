@@ -1,4 +1,4 @@
-<div class="app-container">
+<div class="app-container" [@slideInOut]>
       <div class="content-box">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -27,12 +27,15 @@
                       <i class="pi pi-lock"></i>
                   </p-inputGroupAddon>
                   <p-password placeholder="Password" class="w-100" [toggleMask]="true" />
-              </p-inputGroup>      
+              </p-inputGroup>     
+              <div class="p-2">
+                <span class="text-highlight" (click)="resetPassword()">Forgot Password?</span>
+              </div>  
               <div class="p-2">
                 <p-button label="Log in" styleClass="w-100" [rounded]="true" severity="info" />
               </div>        
-              <div class="p-2 text-center mt-4">
-                <span class="text">Trouble logging in? <strong class="text-highlight" (click)="resetPassword()">Reset Password</strong></span>
+              <div class="p-2 text-center mt-8">
+                <p-button label="Oh! new user? Sign up now!!!" (click)="createAccount()" icon="pi pi-angle-double-up" iconPos="right" [outlined]="true" severity="info" />
               </div>     
             </div>
               </form>

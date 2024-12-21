@@ -1,0 +1,12 @@
+::ng-deep{
+    .create-account-box{
+        border:1px solid var(--app-button-border-color);
+        border-radius: 30px;
+    }
+    .login-to-account{
+       border-bottom: 1px solid var(--app-input-border-color);
+       span{
+        color:var(--app-button-bg-color)
+       }
+    }
+}

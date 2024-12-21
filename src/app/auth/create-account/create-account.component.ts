@@ -1,14 +1,14 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-create-account',
   standalone: false,
   
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',  
+  templateUrl: './create-account.component.html',
+  styleUrl: './create-account.component.scss',  
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
@@ -20,7 +20,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
     ])
   ]
 })
-export class LoginComponent implements OnInit {
+export class CreateAccountComponent {
   error: string | undefined;
   loginForm!: FormGroup;
   isLoading = false;
@@ -72,13 +72,11 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  resetPassword(){
-    this.router.navigate(['/reset-password'], { relativeTo: this.route });
+  gotoLogin(){
+    this.router.navigate(['/login'], { relativeTo: this.route });
   }
-
-  createAccount(){
-    this.router.navigate(['/create-account'], { relativeTo: this.route });
-
+  verifyOTP(){
+    this.router.navigate(['/verify-otp'], { relativeTo: this.route });
   }
 
 }
