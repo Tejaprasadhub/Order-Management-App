@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "component:create": "ng g component header --module=shell/shell.module.ts",
-    "module:create": "ng g m --module app.module --route create-account"
+    "module:create": "ng g m --module app.module --route finish-registration"
   },
   "private": true,
   "dependencies": {

@@ -8,6 +8,7 @@ const routes: Routes = [
     { path: 'reset-password', loadChildren: () => import('./auth/reset-password/reset-password.module').then(m => m.ResetPasswordModule) },
     { path: 'verify-otp', loadChildren: () => import('./auth/verify-otp/verify-otp.module').then(m => m.VerifyOtpModule) },
     { path: 'change-password', loadChildren: () => import('./auth/change-password/change-password.module').then(m => m.ChangePasswordModule) },
+    { path: 'finish-registration', loadChildren: () => import('./auth/finish-registration/finish-registration.module').then(m => m.FinishRegistrationModule) },
   ]),
   { path: 'create-account', loadChildren: () => import('./auth/create-account/create-account.module').then(m => m.CreateAccountModule) },
   { path: '', redirectTo: 'login', pathMatch: 'full'  },

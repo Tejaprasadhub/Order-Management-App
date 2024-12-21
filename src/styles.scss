@@ -5,7 +5,7 @@
   --app-button-border-color: #0EA5E9;
   --font-family: Arial, Helvetica, sans-serif;
   --app-page-header-color: #374151;
-  --app-page-subheader-color: #6B7280;
+  --app-page-helptext-color: #6B7280;
   --app-text-color: #6B7280;
   --app-text-highlight-color: #374151;
   --app-input-border-color:#BAE6FD;
@@ -56,11 +56,26 @@
 
     .page-subheader {
       font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 20px;
+      text-align: center;
+      color: var(--app-page-header-color);
+    }
+    .page-sectionheader {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      color: var(--app-page-header-color);
+    }
+
+    .page-helptext {
+      font-family: var(--font-family);
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       text-align: center;
-      color: var(--app-page-subheader-color);
+      color: var(--app-page-helptext-color);
     }
 
     .text {
@@ -73,12 +88,6 @@
       font-size: 16px;
     }
 
-    .platform-name {
-      font-size: 20px;
-      color: var(--app-text-highlight-color);
-      text-align: center;
-      font-weight: 600;
-    }
 
     .p-inputgroup-addon {
       border-top-left-radius: 15px;

@@ -73,7 +73,8 @@ export class VerifyOtpComponent {
   }
 
   verifyOtp(){
-    this.router.navigate(['/change-password'], { relativeTo: this.route });
+    // this.router.navigate(['/change-password'], { relativeTo: this.route });
+    this.router.navigate(['/finish-registration'], { relativeTo: this.route });
   }
 
   

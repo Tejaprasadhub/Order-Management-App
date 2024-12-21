@@ -1,0 +1,97 @@
+<div class="app-container" [@slideInOut]>
+  <div class="content-box">
+    <div class="row align-items-center">
+      <div class="col-md-12 mx-auto">
+        <div class="page-subheader p-2 text-left">
+          Finish Creating your account
+        </div>
+        <div class="page-helptext p-2 text-left">
+          Please, fill in the following details to finish creating your account.
+        </div>
+
+        <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+          <div class="col-md-12">
+            <div class="page-sectionheader p-2 text-left">
+              Personal Information
+            </div>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-user"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="firstName" placeholder="First Name" />
+            </p-inputGroup>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-user"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="lastName" placeholder="Last Name" />
+            </p-inputGroup>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-envelope"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="email" placeholder="Email address(Optional)" />
+            </p-inputGroup>
+            <div class="text p-2 text-left">
+              Please choose your gender              
+            </div>
+            <div class="p-2">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Male <i class="pi pi-mars"></i></label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Female <i class="pi pi-venus"></i></label>
+            </div>
+            <!-- <div class="flex flex-wrap gap-3 p-2">
+              <div class="flex align-items-center">
+                  <p-radioButton 
+                  formControlName="gender"
+                      name="pizza" 
+                      value="Cheese" 
+                      [(ngModel)]="ingredient" 
+                      inputId="ingredient1" />
+                  <label for="ingredient1" class="ml-2">
+                      Male
+                  </label>
+              </div>              
+              <div class="flex align-items-center">
+                  <p-radioButton 
+                  formControlName="gender"
+                      name="pizza" 
+                      value="Mushroom" 
+                      [(ngModel)]="ingredient" 
+                      inputId="ingredient2" />
+                  <label for="ingredient2" class="ml-2">
+                      Female
+                  </label>
+              </div>          
+          </div> -->
+            <div class="page-sectionheader p-2 text-left">
+              Shop Information
+            </div>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-shop"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="shopName" placeholder="Shop Name" />
+            </p-inputGroup>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-pencil"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="gst" placeholder="GST IN(Optional)" />
+            </p-inputGroup>
+            <p-inputGroup class="p-2">
+              <p-inputGroupAddon>
+                <i class="pi pi-pencil"></i>
+              </p-inputGroupAddon>
+              <input pInputText formControlName="pan" placeholder="Business PAN(Optional)" />
+            </p-inputGroup>
+            <div class="p-2">
+              <p-button label="Finish Creating Account" styleClass="w-100" [rounded]="true" severity="info" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
