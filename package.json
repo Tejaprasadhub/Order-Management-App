@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "component:create": "ng g component header --module=shell/shell.module.ts",
-    "module:create": "ng g m --module app.module --route account-under-review"
+    "component:create": "ng g component home --module=home-shell/home-shell.module.ts",
+    "module:create": "ng g m --module app.module --route home"
   },
   "private": true,
   "dependencies": {

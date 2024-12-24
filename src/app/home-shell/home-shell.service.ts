@@ -1,11 +1,10 @@
 import { Routes, Route } from '@angular/router';
-
-import { ShellComponent } from './shell.component';
+import { HomeShellComponent } from './home-shell.component';
 
 /**
  * Provides helper methods to create routes.
  */
-export class LoginShell {
+export class HomeShell {
   /**
    * Creates routes using the shell component and authentication.
    * @param routes The routes to add.
@@ -14,7 +13,7 @@ export class LoginShell {
   static childRoutes(routes: Routes): Route {
     return {
       path: '',
-      component: ShellComponent,
+      component: HomeShellComponent,
       children: routes
     };
   }
