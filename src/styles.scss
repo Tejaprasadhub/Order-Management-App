@@ -3,14 +3,17 @@
   --app-bg-color: linear-gradient(#D4F4FF 0%, #ffffff 50%);
   --app-button-bg-color: #0EA5E9;
   --app-button-border-color: #0EA5E9;
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-family: system-ui;
   --app-page-header-color: #374151;
   --app-page-helptext-color: #6B7280;
   --app-text-color: #6B7280;
   --app-text-highlight-color: #374151;
   --app-input-border-color:#BAE6FD;
 }
-
+html *
+{
+   font-family: system-ui !important;
+}
 .app-container {
   background: var(--app-bg-color);
   position: absolute;

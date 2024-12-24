@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'create-account', loadChildren: () => import('./auth/create-account/create-account.module').then(m => m.CreateAccountModule) },
   { path: '', redirectTo: 'login', pathMatch: 'full'  },
   { path: 'login', component: LoginComponent },
+  { path: 'account-under-review', loadChildren: () => import('./account-under-review/account-under-review.module').then(m => m.AccountUnderReviewModule) },
 ];
 
 @NgModule({
