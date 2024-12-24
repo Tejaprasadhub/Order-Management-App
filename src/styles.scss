@@ -21,6 +21,14 @@ html *
   bottom: 0;
   left: 0;
   right: 0;
+  .page-helptext {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--app-page-helptext-color);
+  }
 
   .content-box {
     display: flex;
@@ -29,6 +37,7 @@ html *
     align-items: center;
     width: 100%;
     min-height: 100%;
+  }
 
     .p-button:not(.p-button-outlined) {
       background-color: var(--app-button-bg-color);
@@ -72,14 +81,7 @@ html *
       color: var(--app-page-header-color);
     }
 
-    .page-helptext {
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: center;
-      color: var(--app-page-helptext-color);
-    }
+   
 
     .text {
       color: var(--app-text-color);
@@ -106,5 +108,5 @@ html *
     .p-inputotp .p-inputtext{
       border-radius:0
     }
-  }
+  
 }
