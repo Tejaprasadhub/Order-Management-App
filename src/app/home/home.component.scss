@@ -5,4 +5,10 @@
             line-height: 36px;
         }
     }
+    .start-date,.end-date{
+        width: 45%;
+    }
+  .revenue{
+    background-color: var(--app-bg-color) !important;
+  }
 }
