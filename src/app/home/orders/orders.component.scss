@@ -1,0 +1,58 @@
+::ng-deep{
+    .p-button{
+        padding: 0.5rem 0.8rem !important;
+        background: #ffff !important;
+        font-size: 15px !important;
+        &.active{
+            color: var(--app-button-border-color);
+        }        
+    }
+    .card-div{
+        padding: 0.2rem 0.5rem;
+        .p-card{
+            border: 1px solid var(--app-input-border-color);
+            border-radius: 10px;
+            margin-top:10px;
+            .p-card-content{
+                padding: 0px;
+                label{
+                background-image: linear-gradient(to right, #0EA5E9, #ffff);
+                color: var(--revenue-dues-color);
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 5px;
+                }
+                img{
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+                .label{
+                    font-weight: 600;
+                    font-size: 20px;
+                    color:#1F2937;
+                }                
+                .bottom-div{
+                    display: flex;position: relative;
+                    .image1{
+                        position: absolute;right:35px;z-index:9;
+                    }
+                    .image2{
+                        position: absolute;right:10px;z-index:8;
+                    }
+                    .image3{
+                        position: absolute;right:-15px
+                    }
+                    .p-badge{
+                        z-index: 999999;
+                        position: absolute;
+                        right: 4px;
+                        top: 20px;
+                        // background: #ffff !important;
+                        // border: 1px solid var(--app-input-border-color);
+                        // color: var(--app-button-border-color);    
+                    }
+                }
+            }
+        }
+    }
+}

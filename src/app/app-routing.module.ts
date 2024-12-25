@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { LoginShell } from './shell/shell.service';
 import { HomeShell } from './home-shell/home-shell.service';
+import { OrdersComponent } from './home/orders/orders.component';
 const routes: Routes = [
   LoginShell.childRoutes([
     { path: 'reset-password', loadChildren: () => import('./auth/reset-password/reset-password.module').then(m => m.ResetPasswordModule) },
@@ -11,7 +12,8 @@ const routes: Routes = [
     { path: 'finish-registration', loadChildren: () => import('./auth/finish-registration/finish-registration.module').then(m => m.FinishRegistrationModule) },
   ]),
   HomeShell.childRoutes([
-    { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) }
+    { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+    { path: 'orders',component:OrdersComponent }
    ]),
   { path: 'create-account', loadChildren: () => import('./auth/create-account/create-account.module').then(m => m.CreateAccountModule) },
   { path: '', redirectTo: 'login', pathMatch: 'full'  },
