@@ -8,7 +8,47 @@
     .start-date,.end-date{
         width: 45%;
     }
-  .revenue{
-    background-color: var(--app-bg-color) !important;
-  }
+    .card-div{
+        padding: 0.2rem 0.5rem;
+        .revenue,.dues{
+            background: var(--app-bg-color) !important;
+            border-radius: 15px;
+            .p-card-content{
+                padding: 0.5rem 0!important;
+            }
+            img{
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            .label{
+                color: var(--revenue-dues-color);
+                font-weight: 600;
+            }
+            .value{
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--revenue-dues-color);
+            }
+          }
+          .orders,.retailers{
+            background: var(--orders-retailers-bg-color) !important;
+            border-radius: 15px;
+            .p-card-content{
+                padding: 0.5rem 0!important;
+            }
+            img{
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            .label{
+                color: var(--orders-retailers-color);
+                font-weight: 600;
+            }
+            .value{
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--orders-retailers-color);
+            }
+          }
+    }  
 }

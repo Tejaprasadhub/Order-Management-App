@@ -1,29 +1,55 @@
 <div class="page-header text-left p-3">
-    <span >Welcome!<br>Wholesaler Name.</span>
+    <span>Welcome!<br>Wholesaler Name.</span>
 </div>
 <p-toolbar>
     <div class="p-toolbar-group-start start-date">
-        <p-calendar 
-        [iconDisplay]="'input'" 
-        [showIcon]="true" 
-        placeholder="From Date"
-        inputId="icondisplay" />
+        <p-calendar appendTo="body" [iconDisplay]="'input'" [showIcon]="true" placeholder="From Date"
+            inputId="icondisplay" />
     </div>
     <div class="p-toolbar-group-center page-subheader">
--    </div>
+        - </div>
     <div class="p-toolbar-group-end end-date">
-        <p-calendar 
-        [iconDisplay]="'input'" 
-        [showIcon]="true" 
-        placeholder="To Date"
-        inputId="icondisplay" />
+        <p-calendar appendTo="body" [iconDisplay]="'input'" [showIcon]="true" placeholder="To Date"
+            inputId="icondisplay" />
     </div>
 </p-toolbar>
-        <p-card header="revenue">
-            <p class="m-0">
-4526            </p>
+<div class="row" style="display: flex;">
+    <div class="col-6 card-div">
+        <p-card styleClass="revenue">
+                <span><img alt="Card" src="assets/icons/revenue_filled.png" /> </span>
+                <span class="label">Revenue</span>
+            <p class="m-0 value"><i class="pi pi-indian-rupee p-mr-2"></i> 50000</p>
         </p-card>
-        <p-card header="Orders">
-            <p class="m-0">
-123            </p>
-        </p-card>
+    </div>
+    <div class="col-6 card-div">
+        <p-card styleClass="orders">
+            <span><img alt="Card" src="assets/icons/orders_filled.png" /> </span>
+            <span class="label">Orders</span>
+        <p class="m-0 value"> 256</p>
+    </p-card>
+    </div>      
+</div>
+<div class="row" style="display: flex;">
+    <div class="col-6 card-div">
+        <p-card styleClass="retailers">
+            <span><img alt="Card" src="assets/icons/shop_filled.png" /> </span>
+            <span class="label">Retailers</span>
+        <p class="m-0 value"> 35</p>
+    </p-card>
+    </div>
+    <div class="col-6 card-div">
+        <p-card styleClass="dues">
+            <span><img alt="Card" src="assets/icons/dues_filled.png" /> </span>
+            <span class="label">Dues</span>
+        <p class="m-0 value"><i class="pi pi-indian-rupee p-mr-2"></i> 15200</p>
+    </p-card>
+    </div>      
+</div>
+<div class="card-div">
+    <p-card styleClass="revenue">
+        <span><img alt="Card" src="assets/icons/dues_filled.png" /> </span>
+        <span class="label">Revenue</span>
+        <p-chart type="line" [data]="data" [options]="options" />
+    </p-card>
+</div>
+    

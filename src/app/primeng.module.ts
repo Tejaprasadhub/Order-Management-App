@@ -53,6 +53,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputOtpModule } from 'primeng/inputotp';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   exports: [
@@ -108,7 +109,8 @@ import { InputOtpModule } from 'primeng/inputotp';
     SelectButtonModule,
     EditorModule,
     ColorPickerModule,
-    FloatLabelModule
+    FloatLabelModule,
+    ChartModule
   ]
 })
 export class PrimengModule { }
