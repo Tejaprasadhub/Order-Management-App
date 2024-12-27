@@ -47,7 +47,6 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TimelineModule } from 'primeng/timeline';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { SelectButtonModule } from 'primeng/selectbutton';
-import {EditorModule} from 'primeng/editor';
 import {ColorPickerModule} from 'primeng/colorpicker';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputGroupModule } from 'primeng/inputgroup';
@@ -107,7 +106,6 @@ import { ChartModule } from 'primeng/chart';
     TimelineModule,
     TabMenuModule,
     SelectButtonModule,
-    EditorModule,
     ColorPickerModule,
     FloatLabelModule,
     ChartModule
