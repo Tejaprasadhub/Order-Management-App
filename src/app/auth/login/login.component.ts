@@ -26,6 +26,10 @@ export class LoginComponent implements OnInit {
   isLoading = false;
 
 
+
+
+  
+
   displayPolicies: boolean = false;
   displayCookies: boolean = false;
   displayHelps:boolean=false;

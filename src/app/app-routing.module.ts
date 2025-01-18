@@ -13,16 +13,14 @@ const routes: Routes = [
   ]),
   HomeShell.childRoutes([
     { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-    { path: 'orders',component:OrdersComponent }
    ]),
   { path: 'create-account', loadChildren: () => import('./auth/create-account/create-account.module').then(m => m.CreateAccountModule) },
-  { path: '', redirectTo: 'login', pathMatch: 'full'  },
-  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
   { path: 'account-under-review', loadChildren: () => import('./account-under-review/account-under-review.module').then(m => m.AccountUnderReviewModule) },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+  imports: [RouterModule.forRoot(routes,{ preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]  
 })
 export class AppRoutingModule { }

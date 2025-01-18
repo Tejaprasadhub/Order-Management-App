@@ -5,6 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { PrimengModule } from '../primeng.module';
 import { OrdersComponent } from './orders/orders.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -13,9 +15,11 @@ import { OrdersComponent } from './orders/orders.component';
     OrdersComponent
   ],
   imports: [
-    CommonModule,
-    HomeRoutingModule,
-    PrimengModule
+    CommonModule,    
+    PrimengModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    HomeRoutingModule
   ]
 })
 export class HomeModule { }

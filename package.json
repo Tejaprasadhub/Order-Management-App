@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production --base-href 'https://tejaprasadhub.github.io/order-management-app/'",
+    "publish": "ngh --dir dist/order-management-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "component:create": "ng g component orders --module=home/home.module.ts",
-    "module:create": "ng g m --module app.module --route orders"
+    "module:create": "ng g m --module app.module --route auth"
   },
   "private": true,
   "dependencies": {
