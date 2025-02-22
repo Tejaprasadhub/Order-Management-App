@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href 'https://tejaprasadhub.github.io/order-management-app/'",
+    "build": "ng build",
     "publish": "ngh --dir dist/order-management-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
