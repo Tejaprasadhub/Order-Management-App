@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShellModule } from './shell/shell.module';
 import { HomeShellModule } from './home-shell/home-shell.module';
 import { AuthModule } from './auth/auth.module';
-import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [

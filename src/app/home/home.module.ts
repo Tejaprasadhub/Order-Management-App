@@ -7,6 +7,7 @@ import { PrimengModule } from '../primeng.module';
 import { OrdersComponent } from './orders/orders.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,9 +18,9 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,    
     PrimengModule,
-    BrowserAnimationsModule,
-    BrowserModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
