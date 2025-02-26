@@ -3,4 +3,17 @@
         background-color: transparent;
         padding: 1rem 1rem;
     }
+    .home-footer{
+        .p-toolbar{
+                padding: 0rem 1rem 0.3rem !important;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                span{
+                    font-size: 13px !important;
+                    img{
+                        width: 20px;
+                    }
+                }
+        }
+    }
 }

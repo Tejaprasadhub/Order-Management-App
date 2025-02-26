@@ -3,7 +3,6 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { LoginShell } from './shell/shell.service';
 import { HomeShell } from './home-shell/home-shell.service';
-import { OrdersComponent } from './home/orders/orders.component';
 const routes: Routes = [
   LoginShell.childRoutes([
     { path: 'reset-password', loadChildren: () => import('./auth/reset-password/reset-password.module').then(m => m.ResetPasswordModule) },
